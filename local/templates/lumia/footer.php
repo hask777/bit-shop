@@ -1,6 +1,9 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 use Bitrix\Main\Page\Asset;
 ?>
+            		</div>
+                </div>
+            </div>
             <div class="footer">
                 <!-- Begin Footer Static Top Area -->
                 <div class="footer-static-top">
@@ -342,7 +345,7 @@ use Bitrix\Main\Page\Asset;
         </div>
         <!-- Body Wrapper End Here -->
         <!-- jQuery-V1.12.4 -->
-<?=SITE_TEMPLATE_PATH?>   
+  
          <script src="<?=SITE_TEMPLATE_PATH?>/js/vendor/jquery-1.12.4.min.js"></script>
         <!-- Popper js -->
         <script src="<?=SITE_TEMPLATE_PATH?>/js/vendor/popper.min.js"></script>

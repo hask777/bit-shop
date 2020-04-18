@@ -2,19 +2,18 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 IncludeTemplateLangFile(__FILE__);
 
-use Bitrix\Main\Page\Asset;
 ?>
 <html>
 
 <head>
 	<? $APPLICATION->ShowHead(); ?>
 	<title><? $APPLICATION->ShowTitle() ?></title>
-	<meta charset="utf-8">
+
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>images/favicon.png">
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/images/favicon.png">
 
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/material-design-iconic-font.min.css">
         <!-- Font Awesome -->
@@ -55,7 +54,11 @@ use Bitrix\Main\Page\Asset;
 	<![endif]-->
 <!-- Begin Body Wrapper -->
 <div class="body-wrapper">
-	<? $APPLICATION->ShowPanel() ?>
+
+<div id="panel">
+<? $APPLICATION->ShowPanel() ?>
+</div>
+	
 	<!-- Begin Header Area -->
 	<header>
 		<!-- Begin Header Top Area -->
@@ -125,11 +128,18 @@ use Bitrix\Main\Page\Asset;
 				<div class="row">
 					<!-- Begin Header Logo Area -->
 					<div class="col-lg-3">
-						<div class="logo pb-sm-30 pb-xs-30">
-							<a href="index.html">
-								<img src="<?= SITE_TEMPLATE_PATH;?>/images/menu/logo/1.jpg" alt="">
-							</a>
-						</div>
+
+							<?$APPLICATION->IncludeComponent(
+								"bitrix:main.include",
+								"",
+								Array(
+									"AREA_FILE_SHOW" => "file",
+									"AREA_FILE_SUFFIX" => "inc",
+									"EDIT_TEMPLATE" => "",
+									"PATH" => "include/logo.php"
+								)
+							);?>
+
 					</div>
 					<!-- Header Logo Area End Here -->
 					<!-- Begin Header Middle Right Area -->
@@ -428,3 +438,6 @@ use Bitrix\Main\Page\Asset;
 		</div>
 		<!-- Mobile Menu Area End Here -->
 	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">

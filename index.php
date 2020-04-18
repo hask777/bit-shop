@@ -2,6 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Интернет-магазин \"Одежда\"");
 ?>
+
             <!-- Header Area End Here -->
             <!-- Begin Slider With Banner Area -->
             <div class="slider-with-banner">
