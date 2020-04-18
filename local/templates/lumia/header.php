@@ -14,27 +14,39 @@ use Bitrix\Main\Page\Asset;
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>images/favicon.png">
 
-	<?php
-		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/material-design-iconic-font.min.css');
-		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/material-design-iconic-font.min.css');
-		Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/font-awesome.min.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/fontawesome-stars.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/meanmenu.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/owl.carousel.min.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/slick.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/animate.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/jquery-ui.min.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/venobox.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/nice-select.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/magnific-popup.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/bootstrap.min.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/helper.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/style.css');
-		Asset::getInstance()->addCss( SITE_TEMPLATE_PATH . '/css/responsive.css');
-		Asset::getInstance()->addJs( SITE_TEMPLATE_PATH . '/js/vendor/modernizr-2.8.3.min.js');
-	?>
+		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/material-design-iconic-font.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/font-awesome.min.css">
+        <!-- Font Awesome Stars-->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/fontawesome-stars.css">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/meanmenu.css">
+        <!-- owl carousel CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/owl.carousel.min.css">
+        <!-- Slick Carousel CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/slick.css">
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/animate.css">
+        <!-- Jquery-ui CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/jquery-ui.min.css">
+        <!-- Venobox CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/venobox.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/nice-select.css">
+        <!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/magnific-popup.css">
+        <!-- Bootstrap V4.1.3 Fremwork CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/bootstrap.min.css">
+        <!-- Helper CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/helper.css">
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/responsive.css">
+        <!-- Modernizr js -->
+        <script src="<?=SITE_TEMPLATE_PATH?>/js/vendor/modernizr-2.8.3.min.js"></script>
 
 </head>
 
@@ -93,8 +105,8 @@ use Bitrix\Main\Page\Asset;
 									<div class="ht-language-trigger"><span>English</span></div>
 									<div class="language ht-language">
 										<ul class="ht-setting-list">
-											<li class="active"><a href="#"><img src="images/menu/flag-icon/1.jpg" alt="">English</a></li>
-											<li><a href="#"><img src="images/menu/flag-icon/2.jpg" alt="">Français</a></li>
+											<li class="active"><a href="#"><img src="<?= SITE_TEMPLATE_PATH;?>/images/menu/flag-icon/1.jpg" alt="">English</a></li>
+											<li><a href="#"><img src="<?= SITE_TEMPLATE_PATH;?>/images/menu/flag-icon/2.jpg" alt="">Français</a></li>
 										</ul>
 									</div>
 								</li>
@@ -115,7 +127,7 @@ use Bitrix\Main\Page\Asset;
 					<div class="col-lg-3">
 						<div class="logo pb-sm-30 pb-xs-30">
 							<a href="index.html">
-								<img src="images/menu/logo/1.jpg" alt="">
+								<img src="<?= SITE_TEMPLATE_PATH;?>/images/menu/logo/1.jpg" alt="">
 							</a>
 						</div>
 					</div>
@@ -224,7 +236,7 @@ use Bitrix\Main\Page\Asset;
 										<ul class="minicart-product-list">
 											<li>
 												<a href="single-product.html" class="minicart-product-image">
-													<img src="images/product/small-size/5.jpg" alt="cart products">
+													<img src="<?php echo SITE_TEMPLATE_PATH;?>/images/product/small-size/5.jpg" alt="cart products">
 												</a>
 												<div class="minicart-product-details">
 													<h6><a href="single-product.html">Aenean eu tristique</a></h6>
@@ -236,7 +248,7 @@ use Bitrix\Main\Page\Asset;
 											</li>
 											<li>
 												<a href="single-product.html" class="minicart-product-image">
-													<img src="images/product/small-size/6.jpg" alt="cart products">
+													<img src="<?= SITE_TEMPLATE_PATH; ?>/images/product/small-size/6.jpg" alt="cart products">
 												</a>
 												<div class="minicart-product-details">
 													<h6><a href="single-product.html">Aenean eu tristique</a></h6>
